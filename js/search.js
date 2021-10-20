@@ -28,7 +28,7 @@ function search(i) {
 			case 'i':
 				q = q.substr(2);
 				window.location=(
-					'https://www.google.com/search?tbm=isch&?q=' +
+					'https://www.google.com/search?tbm=isch&q=' +
 					q.replace(' ', '%20'));
 			break;
 			case 'r':
