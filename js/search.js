@@ -25,10 +25,10 @@ function search(i) {
 					'https://github.com/search?q=' +
 					q.replace(' ', '%20'));
 			break;
-			case 'l':
+			case 'i':
 				q = q.substr(2);
 				window.location=(
-					'http://93.174.95.27/search.php?req=' +
+					'https://www.google.com/search?tbm=isch?q=' +
 					q.replace(' ', '%20'));
 			break;
 			case 'r':
