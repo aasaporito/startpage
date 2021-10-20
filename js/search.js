@@ -40,15 +40,15 @@ function search(i) {
 			case 'a':
 				q = q.substr(2);
 				window.location=(
-					'https://www.amazon.it/s/?field-keywords=' +
+					'https://www.amazon.com/s/?field-keywords=' +
 					q.replace(' ', '%20'));
 			break;
 			default:
-				window.location=('http://192.168.1.107:8888/search?q=' +
+				window.location=('https://www.google.com/search?q=' +
 					q.replace(' ', '%20'));
 		}
 	} else { // this is were `normal q` will be parsed
-		window.location=('http://192.168.1.107:8888/search?q=' +
+		window.location=('https://www.google.com/search?q=' +
 			q.replace(' ', '%20'));
 	}
 }
