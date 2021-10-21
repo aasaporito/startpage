@@ -178,3 +178,19 @@ input:focus {
 	outline: none;
 	width: 30%;
 }
+
+.container {
+ 
+    display:flex;
+}
+
+.flex-item {
+    flex-grow: 1;
+    margin:  10px;
+    width: 250px;
+}
+
+.core {
+	flex-grow:  2;
+	margin: 10px;
+}
