@@ -194,3 +194,22 @@ input:focus {
 	flex-grow:  2;
 	margin: 10px;
 }
+
+#picture {
+	width: 200px;
+	height: 200px;
+	padding-right: 20px;
+}
+
+.picture-explanation-container {
+	text-align: center;
+}
+
+.apod {
+	text-align: center;
+	font-weight: bold;
+	color: #60c0d0;
+}
+ #explanation {
+ 	color: white;
+ }
