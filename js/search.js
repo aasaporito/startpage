@@ -1,3 +1,4 @@
+
 // Implements a simple search bar with custom bangs
 
 function search(i) {
@@ -31,18 +32,35 @@ function search(i) {
 					'https://www.google.com/search?tbm=isch&q=' +
 					q.replace(' ', '%20'));
 			break;
-			case 'r':
-				q = q.substr(2);
-				window.location=(
-					'https://www.reddit.com/r/' +
-					q.replace(' ', ''));
-			break;
 			case 'a':
 				q = q.substr(2);
 				window.location=(
 					'https://www.amazon.com/s/?field-keywords=' +
 					q.replace(' ', '%20'));
 			break;
+			case 'c':
+				q = q.substr(2);
+				if (q.endsWith("..")){
+					document.getElementById('calcDisplay').style.display = 'none';
+					document.getElementById('q').value="";
+					document.getElementById('q').focus();
+				} else if(q.endsWith(".")){
+					document.getElementById('q').value="c "; //add space??
+					//document.getElementById('q').innerHTML = '<input type="url" id="q" spellcheck="false" placeholder=" " autofocus="true" autocomplete="off" value="c ">';
+				}else {
+					document.getElementById('calcOut').innerHTML = eval(q);
+					document.getElementById('calcDisplay').style.display = 'block';
+				}
+
+			break;
+			case "l":
+				q = q.substr(2);
+				window.location=(
+					'https://ctw-cc.primo.exlibrisgroup.com/discovery/search?query=any,contains,' + 
+					q.replace(' ', '%20') +
+					'&tab=SearchEverything&search_scope=All_&vid=01CTW_CC:CTWCC&offset=0');
+			break;
+
 			default:
 				window.location=('https://www.google.com/search?q=' +
 					q.replace(' ', '%20'));

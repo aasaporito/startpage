@@ -5,6 +5,7 @@ html {
 	background-color: #282828;
 	font: 20px scientifica;
 	height: 100%;
+	/* background-image: url('/media/flowers.jpg'); */
 }
 
 *, *:before, *:after {
@@ -211,5 +212,29 @@ input:focus {
 	color: #60c0d0;
 }
  #explanation {
- 	color: white;
+ 	color: #a89984;
+ }
+
+ #calcOut {
+ 	color: whitesmoke;
+ }
+
+ .calcOut {
+ 	background-color: #32302f;
+	border-radius: 14px;
+	box-shadow: 0px 0px 5px 3px #16182077;
+	flex-direction: column;
+	min-width: 20ww;
+	padding: 2em;
+ 	min-height: 10ch !important;
+ }
+
+ .calculator {
+ 	font-weight: bold;
+ 	font-size: 20px;
+ 	color: #98971a !important;
+ }
+
+ #calcOut {
+ 	color: #a89984;
  }

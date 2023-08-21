@@ -8,7 +8,6 @@
 
   <body>
     <div class="container">
-      <div class="flex-item frame"> box 1 </div>
       <div class="frame core">
         <p><span><span id="logo">&#9781; </span><span id="time"></span> ~</span></p>
 
@@ -23,19 +22,20 @@
               <li><a href="https://lofi.cafe"><p>lofi</p></a></li>
               <li><a href="https://coderbyte.com/challenges"><p>coderbyte</p></a></li>
               <li><a href="https://www.hackerrank.com/dashboard"><p>hackerrank</p></a></li>
+              <li><a href="https://wakatime.com/dashboard"><p>waka</p></a></li>
 
             </div>
           </div>
           <div class="all">
             <div class="title school"><h3>&#9964; school</h3></div>
             <div class="linksbox">
-              <li><a href="https://moodle.conncoll.edu/moodle/my/"><p>moodle</p></a></li>
+              <li><a href="https://moodle.conncoll.edu/my/"><p>moodle</p></a></li>
               <li><a href="https://camelweb.conncoll.edu/camelweb/camelweb/index"><p>camelweb</p></a></li>
-              <li><a href="https://account.cengage.com/login"><p>webassign</p></a></li>
               <li><a href="https://calendar.google.com/calendar/u/1/r"><p>calendar</p></a></li>
               <li><a href="https://drive.google.com/drive/u/1/my-drive"><p>drive</p></a></li>
               <li><a href="https://mail.google.com/mail/u/1/#inbox"><p>mail</p></a></li>
-              <li><a href="https://openstax.org/details/books/university-physics-volume-1"><p>openstax</p></a></li>
+              <li><a href="http://pepperbush.conncoll.edu/foodpro.net/location.aspx"><p>menu</p></a></li>
+			  <li><a href="https://connquest.conncoll.edu/actioncenter/organization/club-volleyball"><p>connquest</p></a></li>
             </div>
           </div>
           <div class="all">
@@ -62,10 +62,19 @@
         </section>
       </div>
     </div>
+
+    <div class="container">
+      <div class="flex-item calcOut" id="calcDisplay"><span class="calculator">Calc: </span> <span id="calcOut"></span> </div>
+    </div>
     <script src="js/date.js"></script>
     <script src="js/search.js"></script>
 
     <script type="text/javascript" src="js/config.js"></script>
     <script src="js/apod.js"></script>
+    <script src="js/qotd.js"></script>
+    <script type="text/javascript">
+      document.getElementById('calcDisplay').style.display = 'none';
+    </script>
+
   </body>
 </html>
